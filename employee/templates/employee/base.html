@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="stylesheet" href="{% static  'employee/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static   'employee/css/style.css' %}">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center alert alert-danger">Employee data </h1>
+
+        {%  block content %} {%  endblock content %}
+
+    </div>
+
+    <script src="{%  static 'employee/js/bootstrap.min.js' %}"></script>
+    <script src="{%  static 'employee/js/jQuery.js' %}"></script>
+    <script src="{%  static 'employee/js/popper.js' %}"></script>
+</body>
+</html>
