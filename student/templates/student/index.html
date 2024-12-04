@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", content="widt=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{% static  'student/css/index.css' %}">
+</head>
+<body>
+    
+    <form action="" method="POST">
+    {% csrf_token%}
+    {{form.as_p}}
+    </form>
+</body>
+</html>
+
